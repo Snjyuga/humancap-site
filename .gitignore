@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+._*
+
+# VS Code (on garde settings.json partagé)
+.vscode/*
+!.vscode/settings.json
+
+# Logs et fichiers temporaires
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+
