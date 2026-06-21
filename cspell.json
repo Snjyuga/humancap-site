@@ -1,0 +1,18 @@
+{
+  "version": "0.2",
+  "language": "en,fr",
+  "words": [
+    "HumanCap",
+    "Dakar",
+    "OHADA",
+    "Bureautique",
+    "kebab",
+    "preprocessor",
+    "Emmet"
+  ],
+  "ignorePaths": [
+    ".git/**",
+    ".vscode/**",
+    "node_modules/**"
+  ]
+}
