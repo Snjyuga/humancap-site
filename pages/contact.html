@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HumanCap SAS - Contact</title>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">HumanCap SAS</a>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Nous contacter</h1>
+    <section id="formulaire-contact">
+      <h2>Formulaire de contact</h2>
+      <p>Une question ? Une demande ? Remplissez ce formulaire et nous reviendrons vers vous sous 48
+        heures.</p>
+      <form method="post">
+        <label for="nom">Nom et prénom</label>
+        <input type="text" id="nom" name="nom" placeholder="Diallo Brooklyn" required>
+        <label for="email">Votre email</label>
+        <input type="email" id="email" name="email" placeholder="Brooklyn.diallo@gmail.com"
+          required>
+        <label for="tel">Téléphone</label>
+        <input type="tel" id="tel" name="tel" placeholder="+221 77 123 45 67" required>
+        <label for="sujet">Nature de la demande</label>
+        <select name="sujet" id="sujet" required>
+          <option value="">Choisissez le sujet de votre demande</option>
+          <option value="formation">Information sur une formation</option>
+          <option value="consultance">Demande de devis pour la consultance</option>
+          <option value="application">Achat d'une application Excel</option>
+          <option value="autre">Autre</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="6" placeholder="Votre message"
+          required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+    <section id="coordonnees">
+      <!-- TODO: remplacer les informations placeholders par les informations réelles une fois fournies par le client -->
+      <h2>Nos coordonnées</h2>
+      <address>
+        <p><strong>Adresse :</strong> Adresse à préciser, Dakar, Sénégal</p>
+        <p><strong>Email :</strong> <a href="mailto:contact@humancap.sn">contact@humancap.sn</a></p>
+        <p><strong>Téléphone :</strong> <a href="tel:+221770000000">+221 77 000 00 00</a></p>
+      </address>
+    </section>
+    <section id="reseaux-sociaux">
+      <!-- TODO: remplacer les informations placeholders par les informations réelles une fois fournies par le client -->
+      <h2>Nos réseaux sociaux</h2>
+      <ul>
+        <li><a href="https://facebook.com/humancap" target="_blank"
+            rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://instagram.com/humancap" target="_blank"
+            rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://linkedin.com/company/humancap" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>HumanCap SAS, Dakar, Sénégal</p>
+  </footer>
+</body>
+
+</html>
