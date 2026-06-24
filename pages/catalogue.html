@@ -5,12 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HumanCap SAS - Catalogue</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Formations, consultance et applications Excel - HumanCap SAS">
+  <meta property="og:description"
+    content="Découvrez nos formations certifiantes en informatique et bureautique, nos services de consultance et nos applications Excel adaptés aux besoins sénégalais.">
+  <meta property="og:url" content="https://humancap.com/pages/catalogue.html">
+  <meta property="og:type" content="website">
+  <!-- TODO: ajouter og:image et og:site_name au déploiement -->
 </head>
 
 <body>
+  <!--
+    MAINTENANCE :
+    Le <header> et son <nav> sont dupliqués à l'identique sur les cinq pages
+    (index.html, catalogue.html, actualites.html, contact.html, faq.html).
+    Toute modification de la navigation doit être répercutée sur les cinq fichiers.
+    La factorisation interviendra en Phase 2 via PHP (include partagé).
+  -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+  <!-- ===== HEADER ET NAVIGATION ===== -->
   <header>
     <a href="../index.html" aria-label="HumanCap SAS, retour à l'accueil">HumanCap SAS</a>
-    <nav>
+    <nav aria-label="Navigation principale">
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="catalogue.html" aria-current="page">Catalogue</a></li>
@@ -20,14 +36,16 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main id="main-content">
     <h1>Notre catalogue</h1>
     <!-- TODO: ajouter les vrais prix une fois fournis par le client -->
+    <!-- === Section Formations === -->
     <section id="formations">
       <h2>Nos formations</h2>
       <article>
         <img src="../assets/images/formation-informatique-standard.jpg"
-          alt="Formation informatique standard" width="400" height="250">
+          alt="Formation informatique standard" width="400" height="250" loading="lazy">
         <h3>Informatique standard</h3>
         <p>
           Découvrir l'ordinateur, organiser ses fichiers, naviguer en sécurité et utiliser
@@ -40,7 +58,8 @@
       </article>
       <article>
         <img src="../assets/images/formation-bureautique-acceleree.jpg"
-          alt="Formation bureautique accélérée Word et PowerPoint" width="400" height="250">
+          alt="Formation bureautique accélérée Word et PowerPoint" width="400" height="250"
+          loading="lazy">
         <h3>Bureautique accélérée (Word et PowerPoint)</h3>
         <p>
           Rédiger des documents professionnels avec Word et concevoir
@@ -52,8 +71,8 @@
         <a href="contact.html">S'inscrire</a>
       </article>
       <article>
-        <img src="../assets/images/formation-excel-avance.jpg"
-        alt="Formation Excel avancé" width="400" height="250">
+        <img src="../assets/images/formation-excel-avance.jpg" alt="Formation Excel avancé"
+          width="400" height="250" loading="lazy">
         <h3>Excel avancé</h3>
         <p>
           Construire des tableaux de bord professionnels, manipuler de grands
@@ -66,7 +85,8 @@
       </article>
       <article>
         <img src="../assets/images/formation-cv-lettre-motivation.jpg"
-          alt="Formation atelier CV et lettre de motivation" width="400" height="250">
+          alt="Formation atelier CV et lettre de motivation" width="400" height="250"
+          loading="lazy">
         <h3>Atelier CV et lettre de motivation</h3>
         <p>
           Concevoir un CV moderne et lisible, rédiger une lettre de motivation
@@ -78,8 +98,8 @@
         <a href="contact.html">S'inscrire</a>
       </article>
       <article>
-        <img src="../assets/images/formation-sage-100.jpg"
-        alt="Formation SAGE 100 comptabilité" width="400" height="250">
+        <img src="../assets/images/formation-sage-100.jpg" alt="Formation SAGE 100 comptabilité"
+          width="400" height="250" loading="lazy">
         <h3>SAGE 100 comptabilité</h3>
         <p>
           Tenir la comptabilité d'une entreprise sous SAGE 100, du paramétrage
@@ -91,12 +111,13 @@
         <a href="contact.html">S'inscrire</a>
       </article>
     </section>
+    <!-- ==== Section Consultance ==== -->
     <section id="consultance">
       <!-- TODO: remplacer les services placeholders par la liste réelle une fois fournie par le client -->
       <h2>Nos services de consultance</h2>
       <article>
-        <img src="../assets/images/consultance-tenue-comptabilite.jpg"
-        alt="Tenue de comptabilité" width="400" height="250">
+        <img src="../assets/images/consultance-tenue-comptabilite.jpg" alt="Tenue de comptabilité"
+          width="400" height="250" loading="lazy">
         <h3>Tenue de comptabilité</h3>
         <p>
           Externalisez votre comptabilité quotidienne (saisie des écritures, rapprochements,
@@ -106,7 +127,7 @@
       </article>
       <article>
         <img src="../assets/images/consultance-installation-logiciels.jpg"
-          alt="Installation et configuration de logiciels" width="400" height="250">
+          alt="Installation et configuration de logiciels" width="400" height="250" loading="lazy">
         <h3>Installation et configuration de logiciels</h3>
         <p>
           Déploiement et paramétrage de vos outils métier (bureautique, comptabilité,
@@ -116,7 +137,7 @@
       </article>
       <article>
         <img src="../assets/images/consultance-gestion-administrative.jpg"
-          alt="Conseil en gestion administrative" width="400" height="250">
+          alt="Conseil en gestion administrative" width="400" height="250" loading="lazy">
         <h3>Conseil en gestion administrative</h3>
         <p>
           Audit et optimisation de vos procédures internes pour gagner en
@@ -126,7 +147,7 @@
       </article>
       <article>
         <img src="../assets/images/consultance-digitalisation.jpg"
-          alt="Accompagnement à la digitalisation" width="400" height="250">
+          alt="Accompagnement à la digitalisation" width="400" height="250" loading="lazy">
         <h3>Accompagnement à la digitalisation</h3>
         <p>
           Diagnostic numérique, choix des outils adaptés à votre activité et
@@ -135,12 +156,13 @@
         <a href="contact.html">Demander un devis</a>
       </article>
     </section>
+    <!-- ==== Section Applications Excel ==== -->
     <section id="applications-excel">
       <!-- TODO: remplacer les applications placeholders par le catalogue réel une fois fourni par le client -->
       <h2>Nos applications Excel</h2>
       <article>
-        <img src="../assets/images/excel-comptabilite-pme.jpg"
-        alt="Modèle de comptabilité PME" width="400" height="250">
+        <img src="../assets/images/excel-comptabilite-pme.jpg" alt="Modèle de comptabilité PME"
+          width="400" height="250" loading="lazy">
         <h3>Modèle de comptabilité PME</h3>
         <p>
           Tableur complet pour gérer la comptabilité d'une petite structure (journal,
@@ -150,7 +172,7 @@
       </article>
       <article>
         <img src="../assets/images/excel-tableau-bord-commercial.jpg"
-          alt="Tableau de bord commercial" width="400" height="250">
+          alt="Tableau de bord commercial" width="400" height="250" loading="lazy">
         <h3>Tableau de bord commercial</h3>
         <p>
           Suivi des ventes, des clients et des marges en temps réel, avec graphiques
@@ -159,8 +181,8 @@
         <a href="contact.html">Acheter</a>
       </article>
       <article>
-        <img src="../assets/images/excel-paie-simplifiee.jpg"
-        alt="Gestionnaire de paie simplifié" width="400" height="250">
+        <img src="../assets/images/excel-paie-simplifiee.jpg" alt="Gestionnaire de paie simplifié"
+          width="400" height="250" loading="lazy">
         <h3>Gestionnaire de paie simplifié</h3>
         <p>
           Calcul automatique des salaires, cotisations sociales et bulletins de paie
@@ -171,6 +193,7 @@
       <p><strong>Modes de paiement acceptés :</strong> Wave, Orange Money, Mixx by Yas.</p>
     </section>
   </main>
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>HumanCap SAS, Dakar, Sénégal</p>
   </footer>

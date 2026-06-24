@@ -5,12 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HumanCap SAS - Contact</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nous contacter - HumanCap SAS">
+  <meta property="og:description"
+    content="Contactez HumanCap SAS à Dakar pour vos demandes d'information, d'inscription à une formation ou de devis en consultance ou en applications Excel.">
+  <meta property="og:url" content="https://humancap.com/pages/contact.html">
+  <meta property="og:type" content="website">
+  <!-- TODO: ajouter og:image et og:site_name au déploiement -->
 </head>
 
 <body>
+  <!--
+    MAINTENANCE :
+    Le <header> et son <nav> sont dupliqués à l'identique sur les cinq pages
+    (index.html, catalogue.html, actualites.html, contact.html, faq.html).
+    Toute modification de la navigation doit être répercutée sur les cinq fichiers.
+    La factorisation interviendra en Phase 2 via PHP (include partagé).
+  -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+  <!-- ===== HEADER ET NAVIGATION ===== -->
   <header>
     <a href="../index.html" aria-label="HumanCap SAS, retour à l'accueil">HumanCap SAS</a>
-    <nav>
+    <nav aria-label="Navigation principale">
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="catalogue.html">Catalogue</a></li>
@@ -20,8 +36,10 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main id="main-content">
     <h1>Nous contacter</h1>
+    <!-- === Section Formulaire de contact === -->
     <section id="formulaire-contact">
       <h2>Formulaire de contact</h2>
       <p>Une question ? Une demande ? Remplissez ce formulaire et nous reviendrons vers vous sous 48
@@ -48,6 +66,7 @@
         <button type="submit">Envoyer</button>
       </form>
     </section>
+    <!-- === Section Coordonnées === -->
     <section id="coordonnees">
       <!-- TODO: remplacer les informations placeholders par les informations réelles une fois fournies par le client -->
       <h2>Nos coordonnées</h2>
@@ -57,6 +76,7 @@
         <p><strong>Téléphone :</strong> <a href="tel:+221770000000">+221 77 000 00 00</a></p>
       </address>
     </section>
+    <!-- === Section Réseaux sociaux === -->
     <section id="reseaux-sociaux">
       <!-- TODO: remplacer les informations placeholders par les informations réelles une fois fournies par le client -->
       <h2>Nos réseaux sociaux</h2>
@@ -70,6 +90,7 @@
       </ul>
     </section>
   </main>
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>HumanCap SAS, Dakar, Sénégal</p>
   </footer>

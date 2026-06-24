@@ -5,12 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HumanCap SAS - FAQ</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Questions fréquentes - HumanCap SAS">
+  <meta property="og:description"
+    content="Réponses aux questions les plus fréquentes sur l'inscription, les modalités, le paiement, la certification et nos services de consultance chez HumanCap SAS.">
+  <meta property="og:url" content="https://humancap.com/pages/faq.html">
+  <meta property="og:type" content="website">
+  <!-- TODO: ajouter og:image et og:site_name au déploiement -->
 </head>
 
 <body>
+  <!--
+    MAINTENANCE :
+    Le <header> et son <nav> sont dupliqués à l'identique sur les cinq pages
+    (index.html, catalogue.html, actualites.html, contact.html, faq.html).
+    Toute modification de la navigation doit être répercutée sur les cinq fichiers.
+    La factorisation interviendra en Phase 2 via PHP (include partagé).
+  -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+  <!-- ===== HEADER ET NAVIGATION ===== -->
   <header>
     <a href="../index.html" aria-label="HumanCap SAS, retour à l'accueil">HumanCap SAS</a>
-    <nav>
+    <nav aria-label="Navigation principale">
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="catalogue.html">Catalogue</a></li>
@@ -20,7 +36,9 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main id="main-content">
+    <!-- === Section Intro === -->
     <section id="intro">
       <h1>Questions fréquentes</h1>
       <p>Cette page rassemble les questions que vous nous posez le plus
@@ -31,6 +49,7 @@
         concerne. Si votre question n'y figure pas, contactez-nous directement
         via notre formulaire : nous revenons vers vous sous 48 heures ouvrées.</p>
     </section>
+    <!-- === Section Inscription === -->
     <section id="inscription">
       <h2>Inscription et démarrage</h2>
       <details>
@@ -57,6 +76,7 @@
           report ou de remboursement vous seront précisées selon la date d'annonce.</p>
       </details>
     </section>
+    <!-- === Section Pédagogie === -->
     <section id="pedagogie">
       <h2>Modalités pédagogiques</h2>
       <details>
@@ -76,6 +96,7 @@
           lors de l'inscription.</p>
       </details>
     </section>
+    <!-- === Section Tarifs === -->
     <section id="tarifs">
       <h2>Tarifs et paiement</h2>
       <details>
@@ -96,6 +117,7 @@
           facture au nom de votre employeur. Contactez-nous pour les modalités.</p>
       </details>
     </section>
+    <!-- === Section Certifications === -->
     <section id="certification">
       <h2>Certification</h2>
       <details>
@@ -110,6 +132,7 @@
           confirmation immédiate de sa validité.</p>
       </details>
     </section>
+    <!-- === Section Consultance === -->
     <section id="consultance">
       <h2>Consultance et applications</h2>
       <details>
@@ -125,6 +148,7 @@
       </details>
     </section>
   </main>
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>HumanCap SAS, Dakar, Sénégal</p>
   </footer>

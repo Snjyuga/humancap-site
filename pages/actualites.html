@@ -5,12 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HumanCap SAS - Actualités</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Actualités et évènements - HumanCap SAS">
+  <meta property="og:description"
+    content="Lancement officiel, ouverture des inscriptions, partenariats : suivez toute l'actualité de HumanCap SAS et les temps forts de notre activité à Dakar.">
+  <meta property="og:url" content="https://humancap.com/pages/actualites.html">
+  <meta property="og:type" content="website">
+  <!-- TODO: ajouter og:image et og:site_name au déploiement -->
 </head>
 
 <body>
+  <!--
+    MAINTENANCE :
+    Le <header> et son <nav> sont dupliqués à l'identique sur les cinq pages
+    (index.html, catalogue.html, actualites.html, contact.html, faq.html).
+    Toute modification de la navigation doit être répercutée sur les cinq fichiers.
+    La factorisation interviendra en Phase 2 via PHP (include partagé).
+  -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+  <!-- ===== HEADER ET NAVIGATION ===== -->
   <header>
     <a href="../index.html" aria-label="HumanCap SAS, retour à l'accueil">HumanCap SAS</a>
-    <nav>
+    <nav aria-label="Navigation principale">
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="catalogue.html">Catalogue</a></li>
@@ -20,7 +36,9 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main id="main-content">
+    <!-- === Section Intro === -->
     <section id="intro">
       <h1>Actualités</h1>
       <p>Retrouvez ici toutes les annonces de HumanCap SAS : lancement de
@@ -43,6 +61,7 @@
     </article>
   -->
   </main>
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>HumanCap SAS, Dakar, Sénégal</p>
   </footer>
